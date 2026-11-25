@@ -1,0 +1,139 @@
+style.css 
+:root {
+  --primary-yellow: #f59e0b;
+  --dark-bg: #0d0e12;
+  --grafite-escuro: #2A2A2E;
+  --card-bg: rgba(42, 42, 46, 0.9);
+}
+
+/* Fundo da Página com Imagem de Prédio e Filtro Escuro */
+body {
+  background: linear-gradient(rgba(13, 14, 18, 0.88), rgba(13, 14, 18, 0.92)), 
+              url('https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1920&q=80') center/cover fixed no-repeat;
+  color: #f3f4f6;
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  min-height: 100vh;
+}
+
+.navbar {
+  background-color: rgba(11, 12, 14, 0.95) !important;
+  border-bottom: 1px solid #232730;
+  backdrop-filter: blur(8px);
+}
+
+.btn-accent {
+  background-color: var(--primary-yellow);
+  color: #000000;
+  font-weight: 600;
+  border: none;
+}
+
+.btn-accent:hover {
+  background-color: #d97706;
+  color: #000000;
+}
+
+.btn-whatsapp {
+  background-color: #25d366;
+  color: #ffffff;
+  font-weight: 600;
+  border: none;
+}
+
+.btn-whatsapp:hover {
+  background-color: #1da851;
+  color: #ffffff;
+}
+
+.hero-section {
+  padding: 90px 0 70px 0;
+}
+
+.service-card {
+  background-color: var(--card-bg);
+  border: 1px solid #3a3a40;
+  border-radius: 12px;
+  transition: transform 0.2s, border-color 0.2s;
+  backdrop-filter: blur(6px);
+  overflow: hidden;
+}
+
+.service-card:hover {
+  transform: translateY(-4px);
+  border-color: var(--primary-yellow);
+}
+
+.service-cover-wrapper {
+  position: relative;
+  height: 220px;
+  overflow: hidden;
+  border-bottom: 3px solid var(--primary-yellow);
+}
+
+.service-cover-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.service-card:hover .service-cover-img {
+  transform: scale(1.05);
+}
+
+/* Estilo Retangular para a Foto de Perfil */
+.profile-img-rect {
+  width: 100%;
+  max-width: 260px;
+  height: 280px;
+  object-fit: cover;
+  object-position: top center;
+  border-radius: 8px;
+  border: 2px solid var(--primary-yellow);
+  margin: 0 auto 15px auto;
+  display: block;
+}
+
+.timeline-box {
+  border-left: 3px solid var(--primary-yellow);
+  padding-left: 20px;
+  margin-bottom: 25px;
+}
+
+.form-control {
+  background-color: rgba(13, 14, 18, 0.9);
+  border-color: #3a3a40;
+  color: #ffffff;
+}
+
+.form-control:focus {
+  background-color: rgba(13, 14, 18, 0.95);
+  border-color: var(--primary-yellow);
+  color: #ffffff;
+  box-shadow: 0 0 0 0.25rem rgba(245, 158, 11, 0.25);
+}
+
+.map-container {
+  position: relative;
+  overflow: hidden;
+  border-radius: 12px;
+  border: 1px solid #3a3a40;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+.map-container iframe {
+  width: 100%;
+  height: 380px;
+  border: 0;
+  filter: invert(90%) hue-rotate(180deg) contrast(100%);
+}
+
+footer a {
+  color: #9ca3af;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+footer a:hover {
+  color: var(--primary-yellow);
+}

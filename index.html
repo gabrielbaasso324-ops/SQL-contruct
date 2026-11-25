@@ -1,0 +1,625 @@
+<!doctype html>
+<html lang="pt-BR" class="dark" data-bs-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Constructs Bass — Obra Lab Construções Basso. Construção residencial, reforma e retrofit e gerenciamento de obras em Chapecó e região. Visita técnica gratuita. Estrutura sólida, execução precisa."
+    />
+    <title>Constructs Bass — Obra Lab Construções Basso</title>
+
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    
+    <!-- Estilo Personalizado -->
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+
+    <!-- Topbar com Endereço -->
+    <div class="py-2 px-3 text-center bg-warning text-dark fw-bold small">
+      <i class="bi bi-geo-alt-fill me-1"></i> Av. Getúlio Dorneles Vargas, 2085-2067 – Universitário — Visita Técnica Gratuita
+    </div>
+
+    <!-- Navegação -->
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+      <div class="container">
+        <a class="navbar-brand d-flex align-items-center fw-bold text-white fs-4" href="#">
+          <i class="bi bi-building-fill text-warning me-2"></i> CONSTRUCTS BASS
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto me-4 mb-2 mb-lg-0">
+            <li class="nav-item"><a class="nav-link active" href="#inicio">Início</a></li>
+            <li class="nav-item"><a class="nav-link" href="#sobre">Sobre</a></li>
+            <li class="nav-item"><a class="nav-link" href="#equipe">Equipe</a></li>
+            <li class="nav-item"><a class="nav-link" href="#servicos">Serviços</a></li>
+            <li class="nav-item"><a class="nav-link" href="#depoimentos">Depoimentos</a></li>
+            <li class="nav-item"><a class="nav-link" href="#localizacao">Localização</a></li>
+            <li class="nav-item"><a class="nav-link" href="#contato">Contato</a></li>
+          </ul>
+          <a href="https://wa.me/554935512034?text=Ol%C3%A1!%20Gostaria%20de%20solicitar%20um%20or%C3%A7amento%20e%20agendar%20uma%20visita%20t%C3%A9cnica." target="_blank" class="btn btn-accent px-4 py-2">
+            <i class="bi bi-whatsapp me-1"></i> Solicitar Orçamento
+          </a>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header id="inicio" class="hero-section text-center">
+      <div class="container py-4">
+        <div class="row justify-content-center">
+          <div class="col-lg-9">
+            <span class="badge bg-dark border border-warning text-warning mb-3 px-3 py-2 text-uppercase tracking-wider">
+              Obra Lab Construções Basso
+            </span>
+            <h1 class="display-3 fw-bold text-white mb-3">
+              Estrutura sólida, <span class="text-warning">execução precisa.</span>
+            </h1>
+            <p class="fs-4 text-warning fst-italic mb-4">
+              "Construímos muito mais que arquiteturas, construímos sonhos."
+            </p>
+            <p class="lead text-secondary mb-5 fs-5">
+              Construção residencial, reforma, retrofit e gerenciamento de obras em Chapecó e região metropolitana com responsável técnico único acompanhando do projeto à entrega das chaves.
+            </p>
+            <div class="d-flex flex-column flex-sm-row justify-content-center gap-3">
+              <a href="https://wa.me/554935512034?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20uma%20visita%20t%C3%A9cnica%20gratuita." target="_blank" class="btn btn-whatsapp btn-lg px-4 py-3 fs-6">
+                <i class="bi bi-whatsapp me-2"></i> Agendar Visita pelo WhatsApp
+              </a>
+              <a href="#servicos" class="btn btn-outline-light btn-lg px-4 py-3 fs-6">
+                Conhecer Serviços
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Carrossel de Prédios e Obras (Todas as imagens em 16:9) -->
+    <section class="py-4 bg-dark border-top border-bottom border-secondary border-opacity-25">
+      <div class="container">
+        <div id="carouselPredios" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="3500">
+          
+          <!-- Indicadores -->
+          <div class="carousel-indicators mb-2">
+            <button type="button" data-bs-target="#carouselPredios" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselPredios" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselPredios" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          </div>
+
+          <!-- Slides -->
+          <div class="carousel-inner rounded-4 shadow-lg overflow-hidden">
+            <!-- Slide 1 -->
+            <div class="carousel-item active">
+              <div class="carousel-img-wrapper">
+                <img src="https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?auto=format&fit=crop&w=1600&h=900&q=80" class="d-block w-100 carousel-building-img" alt="Edifício Residencial de Alto Padrão">
+                <div class="carousel-caption d-none d-md-block text-start bg-dark bg-opacity-75 p-3 rounded-3 border-start border-warning border-4">
+                  <h5 class="fw-bold text-white mb-1">Edifícios Residenciais</h5>
+                  <p class="small text-light mb-0">Projetos modernos com precisão estrutural do alicerce ao acabamento.</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Slide 2 -->
+            <div class="carousel-item">
+              <div class="carousel-img-wrapper">
+                <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1600&h=900&q=80" class="d-block w-100 carousel-building-img" alt="Empreendimento Comercial Moderno">
+                <div class="carousel-caption d-none d-md-block text-start bg-dark bg-opacity-75 p-3 rounded-3 border-start border-warning border-4">
+                  <h5 class="fw-bold text-white mb-1">Engenharia Comercial</h5>
+                  <p class="small text-light mb-0">Gerenciamento completo para manter prazos e orçamentos rigorosos.</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Slide 3 -->
+            <div class="carousel-item">
+              <div class="carousel-img-wrapper">
+                <img src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=1600&h=900&q=80" class="d-block w-100 carousel-building-img" alt="Arquitetura Contemporânea">
+                <div class="carousel-caption d-none d-md-block text-start bg-dark bg-opacity-75 p-3 rounded-3 border-start border-warning border-4">
+                  <h5 class="fw-bold text-white mb-1">Retrofit e Fachadas</h5>
+                  <p class="small text-light mb-0">Valorização imobiliária com revitalização de estruturas existentes.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Botões de Controle -->
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselPredios" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Anterior</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselPredios" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Próximo</span>
+          </button>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Sobre a Empresa & Linha do Tempo -->
+    <section id="sobre" class="py-5">
+      <div class="container py-4">
+        <div class="row g-4">
+          <div class="col-lg-7">
+            <div class="service-card p-4 p-md-5 h-100">
+              <h2 class="fw-bold fs-2 text-white mb-4"><i class="bi bi-info-circle-fill text-warning me-2"></i> Sobre a Empresa</h2>
+              <p class="text-light fs-6">
+                A Obra Lab Construções Basso nasceu em 2013, da experiência acumulada pelo engenheiro civil Tiago Basso em mais de dez anos de canteiros de obra pelo interior do Paraná.
+              </p>
+              <p class="text-light fs-6">
+                Depois de liderar equipes em construtoras de grande porte, Tiago percebeu que boa parte dos atrasos e estouros de orçamento vinha da falta de comunicação entre projeto, obra e cliente. Decidiu montar sua empresa com uma proposta direta: <strong>um único responsável técnico acompanhando cada etapa</strong>, sem intermediários.
+              </p>
+              <p class="text-light fs-6">
+                Em 2017 adotamos o nome fantasia <strong>Constructs Bass</strong> e ampliamos a atuação para construções residenciais do zero. Hoje mantemos time fixo de engenheiros e mestres de obra, evitando subcontratação em cadeia.
+              </p>
+              
+              <hr class="border-secondary my-4">
+
+              <!-- Missão, Visão e Valores -->
+              <div class="row g-3">
+                <div class="col-md-4">
+                  <h5 class="text-warning fw-bold"><i class="bi bi-bullseye me-1"></i> Missão</h5>
+                  <p class="small text-secondary">Entregar obras no prazo e orçamento combinados em contrato, com acompanhamento técnico contínuo.</p>
+                </div>
+                <div class="col-md-4">
+                  <h5 class="text-warning fw-bold"><i class="bi bi-eye-fill me-1"></i> Visão</h5>
+                  <p class="small text-secondary">Ser reconhecida como a construtora que cumpre o que promete, medida pela indicação direta de clientes.</p>
+                </div>
+                <div class="col-md-4">
+                  <h5 class="text-warning fw-bold"><i class="bi bi-shield-check me-1"></i> Valores</h5>
+                  <p class="small text-secondary">Prazo/orçamento como compromisso, responsabilidade técnica única e comunicação direta.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Linha do Tempo -->
+          <div class="col-lg-5">
+            <div class="service-card p-4 p-md-5 h-100">
+              <h2 class="fw-bold fs-2 text-white mb-4"><i class="bi bi-clock-history text-warning me-2"></i> Linha do Tempo</h2>
+              
+              <div class="timeline-box">
+                <h5 class="text-warning fw-bold mb-1">2013</h5>
+                <p class="text-light mb-0 small">Fundação da Obra Lab Construções Basso por Tiago Basso.</p>
+              </div>
+
+              <div class="timeline-box">
+                <h5 class="text-warning fw-bold mb-1">2017</h5>
+                <p class="text-light mb-0 small">Lançamento da marca Constructs Bass e início das construções residenciais do zero.</p>
+              </div>
+
+              <div class="timeline-box">
+                <h5 class="text-warning fw-bold mb-1">2021</h5>
+                <p class="text-light mb-0 small">Início do gerenciamento de obras comerciais para pequenos empreendedores.</p>
+              </div>
+
+              <div class="timeline-box">
+                <h5 class="text-warning fw-bold mb-1">2026</h5>
+                <p class="text-light mb-0 small">Mais de 90 obras entregues e equipe fixa de 22 profissionais qualificados.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Equipe de Profissionais -->
+    <section id="equipe" class="py-5">
+      <div class="container py-4">
+        <div class="text-center mb-5">
+          <h2 class="fw-bold fs-1 text-white">Nossos Profissionais</h2>
+          <p class="text-secondary fs-5">Time fixo com registro ativo CREA/CAU e ampla vivência de canteiro</p>
+        </div>
+
+        <div class="row g-4">
+          <!-- Profissional 1 -->
+          <div class="col-md-4">
+            <div class="card h-100 service-card text-center p-4">
+              <div class="card-body d-flex flex-column align-items-center">
+                <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&w=800&q=80" alt="Tiago Basso" class="profile-img-rect">
+                <h3 class="card-title h4 text-white">Tiago Basso</h3>
+                <p class="text-warning fw-bold small text-uppercase mb-2">Fundador e Engenheiro Responsável</p>
+                <p class="card-text text-secondary small">
+                  Engenheiro civil com 17 anos de experiência em obras residenciais e comerciais. Registro CREA ativo.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Profissional 2 -->
+          <div class="col-md-4">
+            <div class="card h-100 service-card text-center p-4">
+              <div class="card-body">
+                <div class="mb-3 fs-1 text-warning py-4">
+                  <i class="bi bi-person-workspace" style="font-size: 5rem;"></i>
+                </div>
+                <h3 class="card-title h4 text-white">Renata Kovacs</h3>
+                <p class="text-warning fw-bold small text-uppercase mb-2">Arquiteta Líder de Projetos</p>
+                <p class="card-text text-secondary small">
+                  Responsável técnica por projetos de reforma e retrofit. Registro ativo no CAU.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Profissional 3 -->
+          <div class="col-md-4">
+            <div class="card h-100 service-card text-center p-4">
+              <div class="card-body">
+                <div class="mb-3 fs-1 text-warning py-4">
+                  <i class="bi bi-person-gear" style="font-size: 5rem;"></i>
+                </div>
+                <h3 class="card-title h4 text-white">Marcos Vieira</h3>
+                <p class="text-warning fw-bold small text-uppercase mb-2">Mestre de Obras</p>
+                <p class="card-text text-secondary small">
+                  22 anos de canteiro, responsável direto pela execução e pela segurança do trabalho em todas as obras ativas.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Serviços (Imagens padronizadas em 16:9) -->
+    <section id="servicos" class="py-5">
+      <div class="container py-4">
+        <div class="text-center mb-5">
+          <h2 class="fw-bold fs-1 text-white">Nossos Serviços</h2>
+          <p class="text-secondary fs-5">Toda proposta começa com uma <strong>visita técnica gratuita</strong> no local da obra</p>
+        </div>
+
+        <div class="row g-4">
+          <!-- Card 1 -->
+          <div class="col-md-4">
+            <div class="card h-100 service-card">
+              <div class="service-cover-wrapper">
+                <img 
+                  src="https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?auto=format&fit=crop&w=800&h=450&q=80" 
+                  alt="Capa de Construção Residencial" 
+                  class="service-cover-img"
+                >
+              </div>
+              <div class="card-body p-4 d-flex flex-column justify-content-between">
+                <div>
+                  <div class="fs-2 text-warning mb-2">
+                    <i class="bi bi-house-door-fill"></i>
+                  </div>
+                  <h3 class="card-title h4 text-white mb-3">Construção Residencial</h3>
+                  <p class="card-text text-secondary mb-4">
+                    Construção do terreno à entrega das chaves com projeto estrutural próprio, acompanhamento semanal do engenheiro responsável e cronograma revisado a cada etapa.
+                  </p>
+                </div>
+                <a href="https://www.youtube.com/shorts/L3IgOpDz79M" target="_blank" class="btn btn-outline-warning btn-sm w-100 fw-semibold">
+                  <i class="bi bi-youtube me-1"></i> Ver Vídeo no YouTube
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="col-md-4">
+            <div class="card h-100 service-card">
+              <div class="service-cover-wrapper">
+                <img 
+                  src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=800&h=450&q=80" 
+                  alt="Capa de Reforma e Retrofit" 
+                  class="service-cover-img"
+                >
+              </div>
+              <div class="card-body p-4 d-flex flex-column justify-content-between">
+                <div>
+                  <div class="fs-2 text-warning mb-2">
+                    <i class="bi bi-tools"></i>
+                  </div>
+                  <h3 class="card-title h4 text-white mb-3">Reforma e Retrofit</h3>
+                  <p class="card-text text-secondary mb-4">
+                    Reformas de residências, lojas e escritórios. Cada projeto começa com laudo estrutural prévio para evitar surpresas no custo durante a execução.
+                  </p>
+                </div>
+                <a href="https://www.youtube.com/watch?v=cZ5Dheff2e8" target="_blank" class="btn btn-outline-warning btn-sm w-100 fw-semibold">
+                  <i class="bi bi-youtube me-1"></i> Ver Vídeo no YouTube
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="col-md-4">
+            <div class="card h-100 service-card">
+              <div class="service-cover-wrapper">
+                <img 
+                  src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=800&h=450&q=80" 
+                  alt="Capa de Gerenciamento de Obras" 
+                  class="service-cover-img"
+                >
+              </div>
+              <div class="card-body p-4 d-flex flex-column justify-content-between">
+                <div>
+                  <div class="fs-2 text-warning mb-2">
+                    <i class="bi bi-clipboard2-check-fill"></i>
+                  </div>
+                  <h3 class="card-title h4 text-white mb-3">Gerenciamento de Obras</h3>
+                  <p class="card-text text-secondary mb-4">
+                    Gestão técnica de cronograma, fiscalização de qualidade e negociação com fornecedores para manter o orçamento sob controle sem retrabalho.
+                  </p>
+                </div>
+                <a href="https://www.youtube.com/shorts/lQzWXOQrRDY" target="_blank" class="btn btn-outline-warning btn-sm w-100 fw-semibold">
+                  <i class="bi bi-youtube me-1"></i> Ver Vídeo no YouTube
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Depoimentos -->
+    <section id="depoimentos" class="py-5">
+      <div class="container py-4">
+        <div class="text-center mb-5">
+          <h2 class="fw-bold fs-2 text-white mb-3">Clientes que Confiam em Nosso Trabalho</h2>
+          <div class="d-flex flex-wrap justify-content-center gap-3 fs-6">
+            <span class="badge bg-dark border border-secondary text-light px-3 py-2"><i class="bi bi-building me-1 text-warning"></i> Padaria Trigo Nosso</span>
+            <span class="badge bg-dark border border-secondary text-light px-3 py-2"><i class="bi bi-house me-1 text-warning"></i> Residencial Vale Verde</span>
+            <span class="badge bg-dark border border-secondary text-light px-3 py-2"><i class="bi bi-hospital me-1 text-warning"></i> Clínica Boa Vista</span>
+            <span class="badge bg-dark border border-secondary text-light px-3 py-2"><i class="bi bi-people me-1 text-warning"></i> Família Andrade</span>
+            <span class="badge bg-dark border border-secondary text-light px-3 py-2"><i class="bi bi-shop me-1 text-warning"></i> Ótica Horizonte</span>
+          </div>
+        </div>
+
+        <div class="row g-4">
+          <div class="col-md-4">
+            <div class="service-card p-4 h-100 d-flex flex-column justify-content-between">
+              <p class="text-light fst-italic">
+                "Fechamos o contrato com prazo de seis meses e a casa ficou pronta em seis meses. Depois de duas experiências ruins com outras empresas, foi a primeira vez que isso aconteceu de verdade."
+              </p>
+              <div>
+                <strong class="text-warning d-block">Juliana Andrade</strong>
+                <small class="text-secondary">Cliente residencial · 14/04/2025</small>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="service-card p-4 h-100 d-flex flex-column justify-content-between">
+              <p class="text-light fst-italic">
+                "Reformamos a padaria inteira sem fechar as portas por mais de dois dias seguidos. O Tiago organizou tudo em etapas para não atrapalhar o funcionamento, e o orçamento não mudou."
+              </p>
+              <div>
+                <strong class="text-warning d-block">Roberto Salles</strong>
+                <small class="text-secondary">Padaria Trigo Nosso · 02/09/2025</small>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="service-card p-4 h-100 d-flex flex-column justify-content-between">
+              <p class="text-light fst-italic">
+                "Contratamos só o gerenciamento. A Constructs Bass organizou o cronograma e resolveu conflitos com fornecedores que a gente nem sabia que existiam."
+              </p>
+              <div>
+                <strong class="text-warning d-block">Denise Marchetti</strong>
+                <small class="text-secondary">Clínica Boa Vista · 20/01/2026</small>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Localização -->
+    <section id="localizacao" class="py-5">
+      <div class="container py-4">
+        <div class="row justify-content-center">
+          <div class="col-lg-10">
+            <div class="service-card p-4 p-md-5">
+              <div class="text-center mb-4">
+                <div class="fs-1 text-warning mb-2">
+                  <i class="bi bi-geo-alt-fill"></i>
+                </div>
+                <h2 class="fw-bold fs-2 text-white mb-2">Nosso Endereço</h2>
+                <p class="fs-5 text-light mb-0">
+                  Av. Getúlio Dorneles Vargas, 2085-2067 – Universitário, Chapecó
+                </p>
+              </div>
+              
+              <div class="map-container mt-4">
+                <iframe 
+                  src="https://maps.google.com/maps?q=Av.%20Get%C3%BAlio%20Dorneles%20Vargas,%202085,%20Universit%C3%A1rio,%20Chapec%C3%B3&t=&z=15&ie=UTF8&iwloc=&output=embed" 
+                  allowfullscreen="" 
+                  loading="lazy" 
+                  referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contato -->
+    <section id="contato" class="py-5">
+      <div class="container py-4">
+        <div class="row justify-content-center">
+          <div class="col-lg-7">
+            <div class="text-center mb-4">
+              <h2 class="fw-bold fs-2 text-white">Solicite sua Visita Técnica Gratuita</h2>
+              <p class="text-secondary">Fale diretamente com nosso responsável técnico e tire seu projeto do papel.</p>
+            </div>
+
+            <form class="p-4 p-md-5 rounded-4 service-card">
+              <div class="mb-3">
+                <label for="nome" class="form-label text-white">Nome Completo</label>
+                <input type="text" class="form-control form-control-lg" id="nome" placeholder="Digite seu nome" required>
+              </div>
+
+              <div class="row">
+                <div class="col-md-6 mb-3">
+                  <label for="telefone" class="form-label text-white">Telefone / WhatsApp</label>
+                  <input type="tel" class="form-control form-control-lg" id="telefone" placeholder="(49) 3551-2034" required>
+                </div>
+                <div class="col-md-6 mb-3">
+                  <label for="email" class="form-label text-white">E-mail</label>
+                  <input type="email" class="form-control form-control-lg" id="email" placeholder="gabrielbaasso324@gmail.com">
+                </div>
+              </div>
+
+              <div class="mb-4">
+                <label for="mensagem" class="form-label text-white">Detalhes do Projeto</label>
+                <textarea class="form-control form-control-lg" id="mensagem" rows="4" required placeholder="Descreva brevemente sua necessidade (construção residencial, reforma/retrofit ou gerenciamento)..."></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-accent btn-lg w-100 py-3 fw-bold mb-3">
+                Enviar Solicitação <i class="bi bi-send-fill ms-2"></i>
+              </button>
+
+              <a href="https://wa.me/554935512034?text=Ol%C3%A1!%20Vim%20pelo%20site%20e%20gostaria%20de%20falar%20diretamente%20pelo%20WhatsApp." target="_blank" class="btn btn-whatsapp btn-lg w-100 py-3 fw-bold">
+                Falar pelo WhatsApp Direto <i class="bi bi-whatsapp ms-2"></i>
+              </a>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Rodapé -->
+    <footer class="pt-5 pb-4 border-top border-secondary border-opacity-25" style="background-color: rgba(11, 12, 14, 0.95);">
+      <div class="container">
+        <div class="row g-4 mb-4">
+          <div class="col-lg-4 col-md-6">
+            <h3 class="fw-bold text-white fs-4 mb-2">CONSTRUCTS BASS</h3>
+            <h6 class="text-warning fw-semibold mb-3">Obra Lab Construções Basso</h6>
+            <p class="text-secondary small pe-lg-3">
+              Obra Lab Construções Basso — construção, reforma e gerenciamento de obras. Estrutura sólida, execução precisa.
+            </p>
+          </div>
+
+          <div class="col-lg-2 col-md-6">
+            <h5 class="text-white fw-bold mb-3">Navegação</h5>
+            <ul class="list-unstyled small d-flex flex-column gap-2 mb-0">
+              <li><a href="#inicio">Início</a></li>
+              <li><a href="#sobre">Sobre</a></li>
+              <li><a href="#servicos">Serviços</a></li>
+              <li><a href="#equipe">Equipe</a></li>
+              <li><a href="#depoimentos">Depoimentos</a></li>
+              <li><a href="#contato">Orçamento</a></li>
+              <li><a href="#contato">Contato</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <h5 class="text-white fw-bold mb-3">Contato</h5>
+            <ul class="list-unstyled small text-secondary d-flex flex-column gap-2 mb-0">
+              <li><i class="bi bi-geo-alt-fill text-warning me-2"></i>Av. Getúlio Dorneles Vargas, 2085-2067 – Universitário</li>
+              <li>
+                <a href="https://wa.me/554935512034" target="_blank" class="text-secondary">
+                  <i class="bi bi-telephone-fill text-warning me-2"></i>(49) 3551-2034
+                </a>
+              </li>
+              <li>
+                <a href="https://wa.me/554935512034" target="_blank" class="text-success fw-bold">
+                  <i class="bi bi-whatsapp text-success me-2"></i>(49) 3551-2034
+                </a>
+              </li>
+              <li>
+                <a href="mailto:gabrielbaasso324@gmail.com" class="text-secondary">
+                  <i class="bi bi-envelope-fill text-warning me-2"></i>gabrielbaasso324@gmail.com
+                </a>
+              </li>
+              <li><i class="bi bi-clock-fill text-warning me-2"></i>Seg–Sex, 08h às 18h</li>
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <h5 class="text-white fw-bold mb-3">Atendimento</h5>
+            <p class="text-secondary small mb-3">
+              Atendemos Chapecó e toda a região metropolitana. A visita técnica gratuita vale para os três serviços — construção, reforma e gerenciamento.
+            </p>
+            <a href="https://wa.me/554935512034?text=Ol%C3%A1!%20Gostaria%20de%20solicitar%20uma%20visita%20t%C3%A9cnica." target="_blank" class="btn btn-whatsapp btn-sm w-100 py-2 fw-bold">
+              Solicitar visita no WhatsApp <i class="bi bi-whatsapp ms-1"></i>
+            </a>
+          </div>
+        </div>
+
+        <hr class="border-secondary border-opacity-25 my-4">
+
+        <div class="text-center text-secondary small">
+          <p class="mb-0">&copy; Constructs Bass — Obra Lab Construções Basso. Todos os direitos reservados.</p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Bootstrap 5 JavaScript Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  
+  <script>
+  // Se o site for aberto pelo Live Server (porta 5500), usa o Apache do XAMPP para rodar o PHP.
+  // Ajuste o nome da pasta abaixo caso você tenha colocado o projeto com outro nome em htdocs.
+  const API_BASE = (location.port === '5500')
+    ? 'http://localhost/constructs_bass/api/'
+    : 'api/';
+
+  const formContato = document.querySelector('#contato form');
+  if (formContato) {
+    formContato.addEventListener('submit', async (evento) => {
+      evento.preventDefault();
+
+      if (location.protocol === 'file:') {
+        alert('Abra o site por http://localhost/constructs_bass/ (Apache do XAMPP). Abrindo o arquivo direto, o PHP não funciona.');
+        return;
+      }
+
+      const botao = formContato.querySelector('button[type="submit"]');
+      botao.disabled = true;
+
+      const payload = {
+        nome_completo: document.getElementById('nome').value,
+        telefone_whatsapp: document.getElementById('telefone').value,
+        email: document.getElementById('email').value,
+        tipo_servico: 'Outro',
+        detalhes_projeto: document.getElementById('mensagem').value
+      };
+
+      try {
+        const resposta = await fetch(API_BASE + 'orcamento.php', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify(payload)
+        });
+
+        const texto = await resposta.text();
+        let resultado;
+        try {
+          resultado = JSON.parse(texto);
+        } catch (e) {
+          console.error('Resposta não-JSON do servidor (status ' + resposta.status + '):', texto);
+          alert('O servidor respondeu algo inesperado (status ' + resposta.status + '). Confira se a pasta "api" está junto do index.html e veja o Console (F12).');
+          return;
+        }
+
+        if (resposta.ok) {
+          alert(resultado.mensagem);
+          formContato.reset();
+        } else {
+          console.error('Erro do servidor:', resultado);
+          alert((resultado.erro || 'Não foi possível enviar a solicitação.') +
+                (resultado.detalhe ? '\n\nDetalhe: ' + resultado.detalhe : ''));
+        }
+      } catch (erro) {
+        console.error(erro);
+        alert('Não foi possível contatar o servidor. Verifique se o Apache está ligado no XAMPP.');
+      } finally {
+        botao.disabled = false;
+      }
+    });
+  }
+</script>
+  </body>
+</html>
